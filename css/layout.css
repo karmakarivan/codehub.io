@@ -359,7 +359,7 @@ fieldset[disabled] .btn-theme {
 .promo-banner .promo-banner-text {
   font-size: 20px;
   color: #fff;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 /*------------------------------------------------------------------
@@ -369,7 +369,7 @@ fieldset[disabled] .btn-theme {
   position: relative;
   z-index: 1;
   text-align: center;
-  background: url(../img/1920x1080/01.png) no-repeat;
+  background: url(../img/1920x1080/01.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   padding: 250px 0 200px;
