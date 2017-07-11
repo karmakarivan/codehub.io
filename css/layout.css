@@ -364,6 +364,7 @@ fieldset[disabled] .btn-theme {
 
 /*------------------------------------------------------------------
   	[Promo Block]
+<<<<<<< HEAD
 ------------------------------------------------------------------*/
 .promo-block {
   position: relative;
@@ -402,6 +403,46 @@ fieldset[disabled] .btn-theme {
   color: #fff;
 }
 
+=======
+------------------------------------------------------------------*/
+.promo-block {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background: url(../img/1920x1080/01.jpg) no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 250px 0 200px;
+}
+
+.promo-block:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+/*  background: rgba(81, 87, 105, 0.4);*/
+  content: " ";
+}
+
+.promo-block .promo-block-title {
+  font-size: 70px;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .promo-block .promo-block-title {
+    font-size: 50px;
+  }
+}
+
+.promo-block .promo-block-text {
+  font-size: 25px;
+  color: #fff;
+}
+
+>>>>>>> e6b4815bbc575bf9f3eb2b8d1d5d09a8a089495c
 /*------------------------------------------------------------------
   	[Service]
 ------------------------------------------------------------------*/
