@@ -410,7 +410,7 @@
         <script language="javascript" type="text/javascript">
 
               function clicked(){
-
+          window.alert("Thank You. We will get back to you soon.");
   				var uploadName = document.getElementById('input-name').value;
   				var uploadEmail = document.getElementById('input-email').value;
   				var uploadSub = document.getElementById('input-subject').value;
@@ -424,8 +424,11 @@
   					Message : uploadMsg,
   					timestamp : firebase.database.ServerValue.TIMESTAMP
   				});
-          window.location.reload();
-          window.alert("Thank You. We will get back to you soon.");
+
+
+
+
+        //  window.location.reload();
   			}
         </script>
     </body>
