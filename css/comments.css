@@ -41,9 +41,9 @@ form input, form textarea {
   resize: none;
 }
 form input:focus, form textarea:focus {
-  -moz-box-shadow: 0 0px 2px #e74c3c !important;
-  -webkit-box-shadow: 0 0px 2px #e74c3c !important;
-  box-shadow: 0 0px 2px #e74c3c !important;
+  -moz-box-shadow: 0 0px 2px #2196f3 !important;
+  -webkit-box-shadow: 0 0px 2px #2196f3 !important;
+  box-shadow: 0 0px 2px #2196f3 !important;
 }
 form #input-submit {
   color: white;
