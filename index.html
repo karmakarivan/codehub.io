@@ -321,12 +321,12 @@
         <h1>Contact Us</h1>
   <form method="post" action= "">
     <div class="half left cf">
-      <input type="text" id="input-name" maxlength="25" placeholder="Name">
-      <input type="email" id="input-email" placeholder="Email address">
-      <input type="text" id="input-subject" maxlength="50" placeholder="Subject">
+      <input type="text" id="input-name" maxlength="25" placeholder="Name" required>
+      <input type="email" id="input-email" placeholder="Email address" required>
+      <input type="text" id="input-subject" maxlength="50" placeholder="Subject" required>
     </div>
     <div class="half right cf">
-      <textarea name="message" type="text" id="input-message" maxlength="150" placeholder="Message"></textarea>
+      <textarea name="message" type="text" id="input-message" maxlength="200" placeholder="Message" required></textarea>
     </div>
     <input type="button" onclick="clicked();" value="Submit" id="input-submit">
   </form>
@@ -379,7 +379,7 @@
         <script src="js/components/maginific-popup.min.js" type="text/javascript"></script>
         <script src="js/components/masonry.min.js" type="text/javascript"></script>
         <script src="js/components/gmap.min.js" type="text/javascript"></script>
-<script src="js/submit.js"></script>
+
     		<script src="js/modernizr.min.js"></script>
         <script src="js/classie.js"></script>
         <script src="js/photostack.js"></script>
@@ -415,6 +415,20 @@
   				var uploadEmail = document.getElementById('input-email').value;
   				var uploadSub = document.getElementById('input-subject').value;
   				var uploadMsg = document.getElementById('input-message').value;
+          var atpos=uploadEmail.indexOf("@");
+          var dotpos=uploadEmail.lastIndexOf(".");
+
+          if(!uploadName || !uploadEmail || !uploadSub || !uploadMsg)
+          {
+            alert("You cannot submit any blank field. Please fill all the fields.")
+          }
+
+          else if (atpos<1 || dotpos<atpos+2 || dotpos+2>=uploadEmail.length) {
+
+            alert("The entered email address is not valid. Please enter a valid email address.");
+            return false;
+          }
+          else {
 
   				var database = firebase.database().ref().child("Contact-Us");
   				database.push().set({
@@ -431,9 +445,9 @@ document.getElementById('input-email').value=null;
 document.getElementById('input-subject').value=null;
 document.getElementById('input-message').value=null;
 
-
-        //  window.location.reload();
   			}
+
+    }
         </script>
     </body>
     <!-- END BODY -->
