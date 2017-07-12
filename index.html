@@ -319,7 +319,7 @@
         <br><br><br>
 <div id="comment">
         <h1>Contact Us</h1>
-  <form method="post" action="#body">
+  <form method="post" action= "">
     <div class="half left cf">
       <input type="text" id="input-name" maxlength="25" placeholder="Name">
       <input type="email" id="input-email" placeholder="Email address">
@@ -424,6 +424,8 @@
   					Message : uploadMsg,
   					timestamp : firebase.database.ServerValue.TIMESTAMP
   				});
+          window.location.reload();
+          window.alert("Thank You. We will get back to you soon.");
   			}
         </script>
     </body>
