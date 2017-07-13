@@ -432,10 +432,10 @@
 
   				var database = firebase.database().ref().child("Contact-Us");
   				database.push().set({
-  					Name : uploadName,
-  					Email : uploadEmail,
-  					Subject : uploadSub,
-  					Message : uploadMsg,
+  					name : uploadName,
+  					email : uploadEmail,
+  					subject : uploadSub,
+  					message : uploadMsg,
             read : "false",
   					timestamp : firebase.database.ServerValue.TIMESTAMP
   				});
