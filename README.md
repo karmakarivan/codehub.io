@@ -2,9 +2,9 @@
 
 A website designed by Ivan Karmakar for CodeHub.
 
-CodeHub Link - https://github.com/Jeetu95/CodeHub
+CodeHub Link - *github.com/Jeetu95/CodeHub*
 
-Website Live at -https://code-hub.tk
+Website Live at - *code-hub.tk*
 
 
 App developed by:- Subhajit Das 
